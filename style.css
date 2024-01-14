@@ -1,0 +1,213 @@
+body {
+    margin: 0px;
+    overflow-y: scroll;
+    /*background-color: #292a30;*/
+    background-color: #292a30;
+    color: #eeeeee;
+    font-family: Arial; /*Merriweather*/
+    /*font-size: 7pt;
+    font-variant: normal;
+    font-weight: 400;
+    vertical-align: baseline;*/
+}
+
+a {
+    color: DeepSkyBlue;
+}
+
+p a {
+    
+}
+
+h1 {
+    color: white;
+}
+
+#header {
+        width: 100%;
+        /*background-color: #ddf7ff;*/
+        background-color: #1c1c1c;
+        padding: 16px 128px;
+        box-sizing: border-box;
+        z-index: 1000;
+        box-shadow: 0 1px 2px hsla(0,0%,0%,0.05), 0 1px 4px hsla(0, 0%, 0%, 0.05), 0 2px 8px hsla(0, 0%, 0%, 0.05);
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 0px;
+}
+
+#header-title, #header-subtitle {
+    color: white;
+    margin: 0px;
+}
+
+#header-title {
+    margin-left: 2em;
+    margin-right: auto;
+}
+
+#header-subtitle {
+    margin-left: auto;
+    margin-right: 2em;
+}
+
+#header  a, nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#navbar {
+    height: 2em;
+    display: flex;
+    align-items: center;
+    /*margin: 0em auto;*/
+    margin-left: auto;
+    margin-right: 2em;
+}
+
+nav a {
+    margin-left: 5px;
+    margin-right: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    padding: 8px 10px;
+    text-align: center;
+    font-size: 20px
+}
+
+nav a:hover {
+    border-color: DeepSkyBlue;
+    background-color: #303238;
+    box-shadow: 0px 0px 2px #50507a;
+    color: #eeeeee !important;
+}
+
+a.selected-page {
+    color: #1c1c1c !important;
+    border-color: DeepSkyBlue !important;
+    background-color: #eeeeee;
+    box-shadow: 0px 0px 2px #50507a;
+}
+
+div#content {
+    line-height: 1.42857143;
+    margin: 0em 16em;
+    margin: 0 17%;
+    padding: 4em 0em;
+    /*color: #2c2c2c;*/
+}
+
+img {
+    width: 30%;
+    float: right;
+    margin: 2em 0em 0em 2em;
+    border-radius: 0px;
+}
+
+img#avatar {
+    width: 20%;
+    float: right;
+    margin-top: 3em;
+    margin-left: 2em;
+    margin-bottom: 2em;
+    border-radius: 60px;
+}
+
+div#content h1 {
+    font-size: 25px;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 20px 0;
+}
+
+td {
+  padding: 4px 0;
+}
+
+/* responsive, for mobile*/
+@media (max-width: 1040px) {
+    div#content{
+        margin: 0em 3em;
+        padding: 7em 0em;
+    }
+    
+    img#avatar {
+        width: 30%;
+    }
+    
+    nav#navbar {
+        display: none;
+    }
+    
+    div#side-menu {
+        height: 100%;
+        position: fixed;
+        background-color: aliceblue;
+        display: none;
+        box-shadow: 7px 0px 8px hsla(0,0%,0%,0.1);
+        z-index: 500;
+    }
+    
+    div#side-menu.change {
+        display: block!important;
+    }
+    
+    nav#navbar-mobile a {
+        display: block;
+        padding: 10px;
+        height: auto!important;
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+    
+    nav#navbar-mobile {
+        margin-top: 200px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    
+    header {
+        font-size: 20px;
+    }
+    
+    /* Menu button, copied from
+     * https://www.w3schools.com/howto/howto_css_menu_icon.asp */
+    div#menu-button {
+        display: inline-block;
+        cursor: pointer;
+        margin-left: 20px;
+    }
+
+    div.menu-button-bar {
+        width: 50px;
+        height: 9px;
+        background-color: #393b66;
+        margin: 12px 0;
+        transition: 0.4s;
+        border-radius: 5px;
+    }
+    
+    div#menu-button.change #menu-button-bar1 {
+      transform: translate(0, 21px) rotate(-45deg);
+    }
+
+    div#menu-button.change #menu-button-bar2 {opacity: 0;}
+
+    div#menu-button.change #menu-button-bar3 {
+      transform: translate(0, -21px) rotate(45deg);
+    }
+}
+
+@media (min-width: 1041px) {
+    div#side-menu {
+        display: none;
+    }
+    div#menu-button {
+        display: none;
+    }
+}
