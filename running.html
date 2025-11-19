@@ -1,0 +1,150 @@
+<!--
+    Page style inspired from https://glaudo.github.io
+-->
+
+<head>
+    <title>G.M. Tomaselli</title>
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <base target="_blank">
+</head>
+
+<body>
+
+<header id='header'>
+    <div id="header-2">
+
+    <div id="menu-button" onclick="flipSideMenuState()">
+        <div id="menu-button-bar1" class="menu-button-bar"></div>
+        <div id="menu-button-bar2" class="menu-button-bar"></div>
+        <div id="menu-button-bar3" class="menu-button-bar"></div>
+    </div>
+
+        <h1 id='header-title'><a href='index.html' target="_self">Giovanni Maria Tomaselli</a></h1>
+        
+        <nav id='navbar'>
+            <a href='index.html' id='aboutme' target="_self">About me</a>
+            <a href='research.html' id='research' target="_self">Research</a>
+            <a href='teaching.html' id='teaching' target="_self">Teaching</a>
+            <a href='olympiads.html' id='olympiads' target="_self">Olympiads</a>
+            <a href='other.html' id='other' target="_self">Other</a>
+        </nav>
+    </div>
+</header>
+
+<div id='side-menu'>
+<nav id='navbar-mobile'>
+<a href='index.html' id='aboutme-mobile'>About me</a>
+<a href='research.html' id='research-mobile'>Research</a>
+<a href='teaching.html' id='teaching-mobile'>Teaching</a>
+<a href='olympiads.html' id='olympiads-mobile'>Olympiads</a>
+<a href='other.html' id='other-mobile'>Other</a>
+</nav>
+</div>
+
+<script lang='javascript'>
+    function flipSideMenuState() {
+        var menubutton = document.getElementById('menu-button');
+        var sidemenu = document.getElementById('side-menu');
+        if (menubutton.classList.contains('change')) {
+            menubutton.classList.remove('change');
+            sidemenu.classList.remove('change');
+        }
+        else {
+            menubutton.classList.add('change');
+            sidemenu.classList.add('change');
+        }
+    }
+</script>
+
+<br>
+
+<!--
+    The code up to here is the same in all pages. It should be copy-pasted. Github.io does not support php or any server operation.
+-->
+
+<script lang='javascript'>
+    document.getElementById('other').classList.add('selected-page');
+    document.getElementById('other-mobile').classList.add('selected-page');
+</script>
+
+<div id='content'>
+    <h1>Running</h1>
+    
+    <figure class="float-right">
+      <img src="images/first-half-marathon-cut.jpg">
+      <figcaption>Crossing the finish line of my first ever race.<br>I could not believe the time.</figcaption>
+    </figure>
+    
+    <p>After moving to Princeton in September 2024, I became a runner! My colleagues astrophysicists convinced me to join the Princeton Half Marathon. Even though I trained from zero and for only a handful of weeks, I completed it much faster than I expected! But above all, it was an incredibly fun experience. This gave me the motivation to continue to run and try more races. I must also thank Hofie Hannesdottir, who taught me so much on all things running after my first race, and inspired me to train and improve.</p>
+    
+    <p>For the first year of running, I maintained a rather casual attitude. This changed in September 2025, when I got a smartwatch, signed up to <a href="https://www.strava.com/athletes/187423446">Strava</a>, and started to train consistently for my second Princeton Half Marathon. I am determined to continue training in the next few years, and see what are the best times I can achieve.</p>
+    
+    <br><br><br>
+    
+    <h1>Race results</h1>
+    <p>
+    <table>
+        <tr>
+            <td>Date</td>
+            <td>Place or race</td>
+            <td>Distance</td>
+            <td>Time</td>
+            <td>min/km</td>
+            <td>Notes</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>2024/11/10</td>
+            <td>Princeton</td>
+            <td>Half Marathon</td>
+            <td><a href="https://results.raceroster.com/v2/en-US/results/uys2yg7sxphjwgy4/results">1:34:56</a></td>
+            <td>4:30</td>
+            <td>Unforgettable first race. I had no idea of what time I could get. But especially, I had no idea it could be such a fun and joyful experience!</td>
+        </tr>
+        <tr>
+            <td>2024/11/28</td>
+            <td>Princeton</td>
+            <td>5K</td>
+            <td><a href="https://elitefeats.com/race-results/?id=23963">20:38</a></td>
+            <td>4:08</td>
+            <td>Princeton Turkey Trot under heavy rain. I had landed a few hours before, and hadn't run at all for the previous 12 days. Fun nonetheless!</td>
+        </tr>
+        <tr>
+            <td>2024/12/7</td>
+            <td>Princeton</td>
+            <td>6K</td>
+            <td><a href="https://my.raceresult.com/316860/results#1_61E9DE">23:47</a></td>
+            <td>3:58</td>
+            <td>Winter Wonder Run along the trails in the IAS Woods. Placed 3rd/91 and a loaf of bread as a prize.</td>
+        </tr>
+        <tr>
+            <td>2025/5/4</td>
+            <td>Mayday Relay</td>
+            <td>10.1K</td>
+            <td><a href="https://sites.math.rutgers.edu/~weibel/MAYDAY/mayday25.html">41:49</a></td>
+            <td>4:07</td>
+            <td>Put together two IAS teams to join the legendary Almgren Mayday Relay Race. I ran two legs and my team placed 2nd/9, in 2:54:58 (over 40.4K).</td>
+        </tr>
+        <tr>
+            <td>2025/11/9</td>
+            <td>Princeton</td>
+            <td>Half Marathon</td>
+            <td><a href="https://results.raceroster.com/v2/en-US/results/cuj4hnbcwrjtemzw/results">1:25:02</a></td>
+            <td>4:02</td>
+            <td>Trained consistently for 2 months for this. Ran well, used all my energies, and came away with a result I am proud of. Placed 32nd/1771.</td>
+        </tr>
+    </table>
+    </p>
+    
+    
+</div>
+
+</body>
