@@ -1,0 +1,131 @@
+<!--
+    Page style inspired from https://glaudo.github.io
+-->
+
+<head>
+    <title>G.M. Tomaselli</title>
+    <link rel="icon" type="image/png" href="../images/favicon-32x32.png">
+    <link rel="stylesheet" href="../style.css">
+    <base target="_blank">
+</head>
+
+<body>
+
+<header id='header'>
+    <div id="header-2">
+
+    <div id="menu-button" onclick="flipSideMenuState()">
+        <div id="menu-button-bar1" class="menu-button-bar"></div>
+        <div id="menu-button-bar2" class="menu-button-bar"></div>
+        <div id="menu-button-bar3" class="menu-button-bar"></div>
+    </div>
+
+        <h1 id='header-title'><a href='../index.html' target="_self">Giovanni Maria Tomaselli</a></h1>
+
+        <nav id='navbar'>
+            <a href='../index.html' id='aboutme' target="_self">About me</a>
+            <a href='../research.html' id='research' target="_self">Research</a>
+            <a href='../teaching.html' id='teaching' target="_self">Teaching</a>
+            <a href='../olympiads.html' id='olympiads' target="_self">Olympiads</a>
+            <a href='../other.html' id='other' target="_self">Other</a>
+        </nav>
+    </div>
+</header>
+
+<div id='side-menu'>
+<nav id='navbar-mobile'>
+<a href='../index.html' id='aboutme-mobile'>About me</a>
+<a href='../research.html' id='research-mobile'>Research</a>
+<a href='../teaching.html' id='teaching-mobile'>Teaching</a>
+<a href='../olympiads.html' id='olympiads-mobile'>Olympiads</a>
+<a href='../other.html' id='other-mobile'>Other</a>
+</nav>
+</div>
+
+<script lang='javascript'>
+    function flipSideMenuState() {
+        var menubutton = document.getElementById('menu-button');
+        var sidemenu = document.getElementById('side-menu');
+        if (menubutton.classList.contains('change')) {
+            menubutton.classList.remove('change');
+            sidemenu.classList.remove('change');
+        }
+        else {
+            menubutton.classList.add('change');
+            sidemenu.classList.add('change');
+        }
+    }
+</script>
+
+<br>
+
+<!--
+    The code up to here is the same in all pages. It should be copy-pasted. Github.io does not support php or any server operation.
+-->
+
+<script lang='javascript'>
+    document.getElementById('other').classList.add('selected-page');
+    document.getElementById('other-mobile').classList.add('selected-page');
+</script>
+
+<div id='content'>
+    <p>Note: the text was generated with AI based on a voice note where I briefly recalled the experience. I don't currently have enough time to do a write-up myself.</p>
+    
+    <h1>Salisbury Marathon (4 April 2026)</h1>
+    
+    <p>This is the story of my first marathon: the Salisbury Marathon, run on April 4, 2026. Final time: 3:01:53. It was a wild ride&mdash;from the training block to the race itself&mdash;and I decided to write it down while the memories (and the soreness) are still fresh.</p>
+
+    <h2>How I got here</h2>
+
+    <p>After running two Princeton half marathons and a couple of 30K runs in December, I was curious to try the full distance. So I signed up for the Salisbury Marathon and started my training plan.</p>
+
+    <h2>Training</h2>
+
+    <p>The training block was a crazy journey. The first several weeks were dominated by battles against the weather, as the winter was brutally cold and snowy. Then I caught the flu for a few days, which set me back further. And then came the shoe phase: I tried the Nike Alphafly 3&mdash;a carbon plate shoe&mdash;on a long run at marathon pace, and it gave me huge calf issues. I also tried the Vaporfly 4, which produced the same calf problems plus a nasty blister. Despite all of this, I had still gained a lot of fitness over the training block, and going into the race I was thinking something around 2:55 would have been realistic.</p>
+
+    <h2>Race day preparation</h2>
+
+    <p>I carb loaded in the days before the race and paid a lot of attention to pre-race nutrition. I had bread and marmalade at 4 AM, with the race starting at 7 AM. I had a detailed fueling plan and I took my first gel just before the start, as planned. I went to the start line feeling great, very pumped.</p>
+
+    <p>One important piece of context that I should mention now: most of my training had been done in sub-freezing temperatures. Race day, however, turned out to be a very warm day&mdash;about 18&deg;C at the start and up to 22&deg;C by the end.</p>
+
+    <h2>The race (km 0&ndash;32)</h2>
+
+    <p>I took my gel, went to the start line, and I was feeling great. Then, not even 500 meters into the race, I had stomach pain&mdash;as if the gel was still sitting there rather than being digested. This would become the theme of the entire race.</p>
+
+    <p>But digestive issues aside, the first part of the race was actually pretty good. I locked into a very steady pace: around 4:08/km for the first 20 km, then a slight slowdown to 4:13&ndash;4:14/km up to kilometer 32. The problem was the stomach cramps. The first gel never got digested by the time I had to take the second one, so the second just sat on top of the first. And this kept going for all the subsequent gels, each one stacking on the previous, each one increasing the pain. Several times I thought about stopping to try to vomit, but I didn't.</p>
+
+    <p>During the whole race I grabbed one cup of water at every single aid station. Even though I was using the pinching technique, I was still not getting enough&mdash;some water kept sloshing out of the cups, and I was sweating far more than I was used to, being so unaccustomed to the heat. Some sections also had direct headwind, which cost a few seconds per kilometer. But nothing too bad, all things considered.</p>
+
+    <h2>The wall (km 32+)</h2>
+
+    <p>At kilometer 32, I thought of Pfitzinger's words: <em>"Now you're free to see what you've got."</em> I told myself it was time to push. Instead of increasing, my pace just started dropping&mdash;linearly with distance&mdash;and I ended up around 5:00/km at the finish line. Textbook bonk. The splits chart below tells the story better than words can.</p>
+
+    <figure class="figure-block">
+      <img src="images/salisbury2026-splits.jpeg">
+      <figcaption>My per-kilometer splits. Steady pace through km 32, followed by a linear decline&mdash;a textbook bonk.</figcaption>
+    </figure>
+
+    <h2>After the finish</h2>
+
+    <p>After crossing the finish line, I was completely unable to do anything. Mentally blank. I tried to sip some water, but it was extremely hard because my stomach was hurting so much. I spent over an hour sitting at one of those picnic tables with benches, head in my arms, unable to do pretty much anything, stomach still in pain.</p>
+
+    <p>Then, just before the award ceremony&mdash;I had placed 3rd in the male 25&ndash;29 category&mdash;the GI distress suddenly vanished, and I got all my energy back, just like that.</p>
+
+    <h2>Why the gels didn't digest</h2>
+
+    <p>This was a textbook case of hitting the wall. All signs point to the same explanation: my gels never got absorbed. They just sat in my stomach the entire race, giving me pain, and I only digested them after sitting at that picnic table for over an hour. So why didn't they digest?</p>
+
+    <p>I have a few ideas. When I trained with gels on long fast runs, it was below freezing&mdash;often around &minus;10&deg;C&mdash;and in those conditions no blood needed to be directed to the skin for cooling. On race day, I was sweating far more than during any training run, which means blood was near the skin to produce sweat, and thus not available to the stomach for digestion. It's also possible that adrenaline at the start played a role, because I didn't even digest the very first gel&mdash;the one I took before the gun went off, while I was bouncing on my feet and getting pumped at the start line.</p>
+
+    <p>I should also mention that when I got back to the hotel, I noticed salt crystals along my eyebrows and the sides of my forehead. This probably means I was electrolyte depleted as well: if none of the gels were absorbed, then I also never got the sodium from them. My plan had been to get all my sodium from gels, since I was drinking water rather than Gatorade on the course. So I essentially ran the entire race on the glycogen I had stored during the carb loading days, and nothing else.</p>
+
+    <h2>Reflection</h2>
+
+    <p>Despite everything that happened, I am very proud of this race. It was my first marathon. I came in 9th place out of 287, and 3rd in the male 25&ndash;29 age group. Given what happened with the fueling, I actually think 3:01:53 is a great time&mdash;I basically ran the entire distance on stored glycogen alone.</p>
+
+    <p>And I'll admit something a bit strange: I'm kind of weirdly happy that I got to experience running purely on glycogen and hitting the wall on my very first marathon. It's a fascinating experience. There's something almost cool about feeling all of these physiological mechanisms playing out in your own body.</p>
+
+</div>
+
+</body>
