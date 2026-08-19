@@ -308,3 +308,120 @@ figure.float-right-big {
         max-width: 100%;
     }
 }
+
+
+/* === Photo slideshow (lightbox) === */
+/* Driven by gallery.js, which only runs on the trip diary pages. These rules
+ * are inert elsewhere: .lb-overlay does not exist until the script builds it.
+ * Note the pages render in quirks mode (no DOCTYPE), so sizing uses edge
+ * offsets rather than percentage heights, and box-sizing is set explicitly. */
+
+img.zoomable {
+    cursor: zoom-in;
+}
+
+.lb-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+    background-color: rgba(20, 21, 25, 0.94);
+    z-index: 2000;    /* the fixed #header sits at 1000 */
+    text-align: center;
+}
+
+.lb-overlay.open {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Reset the page's figure styling, which would otherwise apply here too. */
+.lb-overlay .lb-figure {
+    display: block;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0 4em;
+    max-width: 100%;
+    color: #eeeeee;
+    font-size: 1em;
+}
+
+/* Overrides "figure > img { width: 100% }", which would stretch the slide. */
+.lb-overlay .lb-img {
+    width: auto;
+    max-width: 100%;
+    max-height: 80vh;
+    object-fit: contain;
+    vertical-align: middle;
+}
+
+.lb-overlay .lb-caption {
+    margin: 1em auto 0 auto;
+    max-width: 60em;
+    font-style: italic;
+    line-height: 1.4;
+    text-align: center;
+    color: #cccccc;
+}
+
+.lb-overlay .lb-counter {
+    position: absolute;
+    top: 1em;
+    left: 1.2em;
+    color: #999999;
+    font-size: 0.9em;
+}
+
+.lb-overlay button {
+    position: absolute;
+    background: none;
+    border: none;
+    color: #eeeeee;
+    cursor: pointer;
+    font-family: inherit;
+    line-height: 1;
+    padding: 0.2em 0.4em;
+    border-radius: 8px;
+}
+
+.lb-overlay button:hover,
+.lb-overlay button:focus {
+    color: DeepSkyBlue;
+    background-color: rgba(255, 255, 255, 0.08);
+    outline: none;
+}
+
+.lb-overlay .lb-close {
+    top: 0.4em;
+    right: 0.6em;
+    font-size: 40px;
+}
+
+.lb-overlay .lb-prev,
+.lb-overlay .lb-next {
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 60px;
+}
+
+.lb-overlay .lb-prev { left: 0.3em; }
+.lb-overlay .lb-next { right: 0.3em; }
+
+@media (max-width: 768px) {
+    .lb-overlay .lb-figure {
+        padding: 0 0.5em;
+    }
+
+    .lb-overlay .lb-img {
+        max-height: 70vh;
+    }
+
+    .lb-overlay .lb-prev,
+    .lb-overlay .lb-next {
+        font-size: 40px;
+    }
+}
