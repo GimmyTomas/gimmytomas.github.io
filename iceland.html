@@ -1,0 +1,723 @@
+<!--
+    Page style inspired from https://glaudo.github.io
+-->
+
+<head>
+    <title>G.M. Tomaselli</title>
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <base target="_blank">
+</head>
+
+<body>
+
+<header id='header'>
+    <div id="header-2">
+
+    <div id="menu-button" onclick="flipSideMenuState()">
+        <div id="menu-button-bar1" class="menu-button-bar"></div>
+        <div id="menu-button-bar2" class="menu-button-bar"></div>
+        <div id="menu-button-bar3" class="menu-button-bar"></div>
+    </div>
+
+        <h1 id='header-title'><a href='index.html' target="_self">Giovanni Maria Tomaselli</a></h1>
+        
+        <nav id='navbar'>
+            <a href='index.html' id='aboutme' target="_self">About me</a>
+            <a href='research.html' id='research' target="_self">Research</a>
+            <a href='teaching.html' id='teaching' target="_self">Teaching</a>
+            <a href='olympiads.html' id='olympiads' target="_self">Olympiads</a>
+            <a href='other.html' id='other' target="_self">Other</a>
+        </nav>
+    </div>
+</header>
+
+<div id='side-menu'>
+<nav id='navbar-mobile'>
+<a href='index.html' id='aboutme-mobile'>About me</a>
+<a href='research.html' id='research-mobile'>Research</a>
+<a href='teaching.html' id='teaching-mobile'>Teaching</a>
+<a href='olympiads.html' id='olympiads-mobile'>Olympiads</a>
+<a href='other.html' id='other-mobile'>Other</a>
+</nav>
+</div>
+
+<script lang='javascript'>
+    function flipSideMenuState() {
+        var menubutton = document.getElementById('menu-button');
+        var sidemenu = document.getElementById('side-menu');
+        if (menubutton.classList.contains('change')) {
+            menubutton.classList.remove('change');
+            sidemenu.classList.remove('change');
+        }
+        else {
+            menubutton.classList.add('change');
+            sidemenu.classList.add('change');
+        }
+    }
+</script>
+
+<br>
+
+<!--
+    The code up to here is the same in all pages. It should be copy-pasted. Github.io does not support php or any server operation.
+-->
+
+<script lang='javascript'>
+    document.getElementById('other').classList.add('selected-page');
+    document.getElementById('other-mobile').classList.add('selected-page');
+</script>
+
+<div id='content'>
+    <h1>Trip to: Iceland (August 2026)</h1>
+    
+    <figure class="float-right-big">
+      <img src="iceland-images/iceland-edited/iceland.jpeg">
+      <figcaption>Satellite picture of Iceland. My day-by-day road movements are indicated with colored lines.</figcaption>
+    </figure>
+    
+    <p>This is a diary about my road trip in Iceland, where I also experienced a total solar eclipse on August 12, 2026.</p>
+    
+    <p>This page was last updated on August 18, 2026.</p>
+    
+    <p>Here are the links to all the sections within this page:</p>
+    
+    <ul>
+    <li><a href="#preface" target="_self">Preface</a></li>
+    <li><a href="#acknowledgements" target="_self">Acknowledgements</a></li>
+    <li><a href="#day-0" target="_self">Day 0: Hawaiian serendipity</a></li>
+    <li><a href="#day-1" target="_self">Day 1: Reykjanes</a></li>
+    <li><a href="#day-2" target="_self">Day 2: Golden Circle and Reykjadalur</a></li>
+    <li><a href="#day-3" target="_self">Day 3: Landmannalaugar</a></li>
+    <li><a href="#day-4" target="_self">Day 4: Glaciers</a></li>
+    <li><a href="#day-5" target="_self">Day 5: Eastern valleys</a></li>
+    <li><a href="#day-6" target="_self">Day 6: Askja</a></li>
+    <li><a href="#day-7" target="_self">Day 7: Geothermal power</a></li>
+    <li><a href="#day-8" target="_self">Day 8: Diamond Circle</a></li>
+    <li><a href="#day-9" target="_self">Day 9: Akureyri and Vatnsnes</a></li>
+    <li><a href="#day-10" target="_self">Day 10: Westfjords</a></li>
+    <li><a href="#day-11" target="_self">Day 11: Purple darkness</a></li>
+    <li><a href="#day-12" target="_self">Day 12: The long road back</a></li>
+    <li><a href="#day-13" target="_self">Day 13: One last walk</a></li>
+    </ul>
+    
+    <h2 id="preface">Preface</h2>
+    
+    <p>My <a href="hawaii.html">Hawai&#699;i trip diary</a> from August 2025 had such a key role in making my trip unforgettable that I figured I had to write the sequel. So here it is. But, dear reader, please bear in mind that the Hawai&#699;i adventure was special in a way that others cannot be. My exploration of Iceland was also amazing and worth telling, but not as much of a personally meaningful experience as meeting the Hawaiian volcanoes. <!--Also in terms of surprises, irony, and epicness, the Hawai&#699;i diary is probably a better read.--> That being said, if you are curious about it, here is the full story. Enjoy!</p>
+    
+    <p>Although not dreamt about for 20 years, Iceland is also really my kind of place. Wilderness, volcanoes, glaciers, fjords. This subaerial part of the Mid-Atlantic ridge is a geological paradise. In fact, some parts of it have direct Hawaiian analogues: for example Fagradalsfjall's lava field from its 2021 eruption, perhaps only comparable to K&imacr;lauea's 2018 Leilani Estates eruption in terms of accessibility of the lava flow. Askja was also a particularly fascinating place for me, in part due to the training of NASA's Apollo astronauts that took place in the area, and in part due to its aura of remote and extraterrestrial place&mdash;the closest thing to Mauna Loa here. Perhaps the only thing Iceland lacks is biodiversity: in particular, it's too North for any tall or remarkable tree to grow properly.</p>
+        
+    <p>While this country was an obvious entry in my list for all the reasons above, I prefer to let the timing of my trips be decided by natural events. In this case, the total solar eclipse of August 12, 2026. I had actually seriously considered visiting Iceland before, and decided to defer to 2026 for this reason. This eclipse would have also been visible from Spain, which has a higher chance of clear skies. But in my mind there really was no competition between the appeal of Iceland versus Spain. Furthermore, I got lucky enough on April 8, 2024, when I saw totality clearly from Ohio, so I figured I wouldn't be too disappointed if weather didn't cooperate this time around.</p>
+    
+    <p>Of course, accommodations were completely booked out in the totality path for the days around the eclipse. Campervans too. So I had to get a little creative, and booked a "sleep-in-back" car&mdash;I figured that would have been enough for a few days of camping, and I would have hopped between accommodations for the rest of the nights.</p>
+    
+    <p>Finally, I should mention that on May 12, 2026 I found out I had injured my leg, which MRI later confirmed to be a pretty serious tibial stress reaction. This had kept me out of running since then, and I even tried and failed to return to running mid-July. So I was going into this Iceland holiday both a little nervous about long hikes, and hopeful that it would have marked my return to the outdoor activities I had much missed the previous months.</p>
+        
+    <h2 id="acknowledgements">Acknowledgements</h2>
+    
+    <p>My former colleague and only Icelandic friend, H&oacute;f&iacute; Hannesd&oacute;ttir, was so kind to give me all sorts of advice on visiting her beautiful country. This included a quite detailed document listing attractions all across the country and especially the Reykjav&iacute;k area. H&oacute;f&iacute; was also in Iceland during my trip, and we managed to meet three times at three different locations!</p>
+    
+    <p>The first part of this trip was characterized by an unexpected event. Thank you, Leilani Elkaslasy. I will not spoil here the rest of the story.</p>
+    
+    <h2 id="day-0">Day 0 (August 1): Hawaiian serendipity</h2>
+    
+    <p>The plane was soon to take off at 23:10, and the two seats to my right were both free. But a passenger walked over, slid into the window seat and told me &laquo;I think I'm the last one to board.&raquo; She looked a few years younger than me and was wearing the football jersey of Argentina. I asked if she was Argentinian, &laquo;No, but my boyfriend is.&raquo; We started talking. I explained to her that I was going to Iceland for tourism, due to my fascination for volcanoes and for astronomy, similar to a trip to Hawai&#699;i I did the previous year. She had no idea there was an upcoming solar eclipse in Iceland. &laquo;So why are you going to Iceland?&raquo; &laquo;Well, I'm starting something called Watson Fellowship, and a couple of days ago I realized that the rules require me to be out of country before August 2, so I booked the last possible flight. It's just a 2-day layover, then I'll be going to Kenya for at least one month.&raquo; &laquo;Wait, Watson Fellowship? I know what that is.&raquo; The former Hawai&#699;i resident who advised me for my trip the previous year also got it: every year, 39 awardees get to spend 12 months around the world pursuing their own project. My seat neighbor wanted to design accessible items and furniture for disabled children in Kenya, Egypt, Brazil, Argentina, and maybe Thailand&mdash;even though she was actually an electrical engineer. After a good hour of conversation we agreed it was time to try and sleep. I asked: &laquo;By the way, what's your name?&raquo; &laquo;Leilani.&raquo; &laquo;L-E-I-L-A-N-I?&raquo; &laquo;Yes.&raquo; I had to give an explanation for my expression of shock. I was planning to visit the Icelandic equivalent of Leilani Estates first thing next day. I didn't even know that was a Hawaiian woman's name.</p>
+    
+    <h2 id="day-1">Day 1 (August 2): Reykjanes</h2>
+    
+    <p>When we woke up, Leilani asked me about my plans. She didn't know what to do in Iceland, and was considering taking a bus to the Blue Lagoon, or maybe renting a car. She shared these thoughts as we got through immigration and baggage claim. Then we hopped on the same bus to Reykjav&iacute;k and she asked &laquo;But... Do you want to do your volcano hikes alone? Would you mind if I joined you? I want to see the lava through your eyes!&raquo; How could I not bring a Leilani to a fresh lava field?</p>
+    
+    <p>From the bus, the Reykjanes peninsula really looked like Hawai&#699;i. P&amacr;hoehoe (helluhraun) and &#699;a&#699;&amacr; (apalhraun) fields on one side, but covered in moss and lichens rather than &#699;&omacr;hi&#699;a shrubs, and the ocean on the other side. I got my rental car, a "sleep-in-back" 4x4 Dacia Duster with surprisingly complete camping equipment, including two sleeping bags (once again, my Hawaiian sleeping bag turned out to be redundant...). I went to pick up Leilani from her accommodation, but she suggested having a coffee before leaving. It was the 358th day after my first cup of coffee. Looks like I do change over the years, after all. So I said yes, then we got some food stocks, and headed back to Reykjanes.</p>
+    
+    <p>We stopped by the Blue Lagoon first. I had convinced Leilani that it was not worth the time or the money, but we still wanted to take a look. Unfortunately, only a small patch of the characteristic milky blue water amidst black lava was visible before the paid entry gate. Next, we reached the Icelandic Leilani Estates: Fagradalsfjall, the volcano that erupted in 2021, making news all around the world for how easily accessible the active lava flow was. I had selected this as a first-day visit due to its vicinity to Reykjav&iacute;k, and because it featured an easy hike I could use as a test to gauge my tibia's tolerance. The hike starts among smooth colorful hills, then climbs one of them to reveal the recent black lava flow. I was so happy to be hiking again, and to see once again fresh lava up close.</p>
+    
+    <div class="figure-block">
+        <figure>
+          <img src="iceland-images/day-1/to-fagradalfjall.jpeg">
+          <figcaption>Hiking to Fagradalsfjall's 2021 lava flow.</figcaption>
+        </figure>
+        <figure>
+        <img src="iceland-images/day-1/leilani-on-lava.jpeg">
+        <figcaption>Leilani analyzing &#699;a&#699;&amacr; lava. The hill behind is the exterior wall of the lava channel.</figcaption>
+      </figure>
+      <figure>
+        <img src="iceland-images/day-1/flow-1.jpeg">
+        <figcaption>View of the lava flow from the edge of the lava channel.</figcaption>
+      </figure>
+    </div>
+    
+    <figure class="float-right">
+      <img src="iceland-images/day-1/lava-channel.jpeg">
+      <figcaption>Interior of the lava channel, looking upstream.</figcaption>
+    </figure>
+    
+    <p>Near a point where a ground barrier had been erected to contain the flow, Leilani got curious about the lava: &laquo;Do you think I can walk on it?&raquo; &laquo;Well... &#699;A&#699;&amacr; is very sharp, you have to be careful...&raquo; But she had already gone off-trail and stepped on it. At least 15 minutes of pure wonder followed. She was uncovering rocks of different sizes, shapes, colors, and smoothness. Here was a rainbow one! And one with golden stripes! And one with a smooth bottom! I was ready to return to the trail, but Leilani said &laquo;What's that? Can we climb it?&raquo; The lava flow seemed to become steeper towards the center, with some p&amacr;hoehoe covering the &#699;a&#699;&amacr;. We climbed the hill, and at the top my jaw dropped: we were on the edge wall of the lava channel, whose interior was completely visible from its side! I had not realized we could so easily access the lava channel. From there, we got a panoramic view of the vent (Geldingadalir), the whole lava flow covering N&aacute;tthagi Valley, and the ocean behind it. I realized I had to thank her high openness (the Big 5 trait), because I wouldn't have stepped off trail by myself, missing out on the experience.</p>
+    
+    <p>We sat there for some time. Our initial plan was to hike one hour and then turn around, and I usually like to have my lunch at the turnaround point. It was actually early afternoon&mdash;we hadn't got hungry earlier due to jet lag. I asked &laquo;Shall we continue the hike and have lunch? Or... Eat here?&raquo; Leilani replied &laquo;Honestly? This place is pretty sick.&raquo; So we had a memorable and windy lunch while sitting on the edge of the lava channel. We did eventually continue the hike, reached a couple more interesting spots (including a purely p&amacr;hoehoe part of the lava flow), and then hiked back. We discussed what exactly makes hiking so enjoyable. We could settle on one half of it: walking outdoors, putting one foot in front of another, avoiding rocks on the ground, are all activities we probably evolved to do as hunter-gatherers, and likely involve less mental stress than the life we created for ourselves after the agricultural revolution. The other half, that is why landscapes or natural areas appear beautiful to our eyes, we had no plausible explanation for.</p>
+    
+    <div class="figure-block">
+        <figure>
+          <img src="iceland-images/day-1/geldingadalir.jpeg">
+          <figcaption>Geldingadalir vent from a distance.</figcaption>
+        </figure>
+        <figure>
+        <img src="iceland-images/day-1/mud-pots.jpeg">
+        <figcaption>Boiling mud pots at Kr&yacute;suv&iacute;k.</figcaption>
+      </figure>
+      <figure>
+        <img src="iceland-images/day-1/krisuvik.jpeg">
+        <figcaption>Overlooking Kr&yacute;suv&iacute;k.</figcaption>
+      </figure>
+    </div>
+    
+    <p>Next, we headed to the Kr&yacute;suv&iacute;k geothermal area. I hadn't seen anything like it since visiting the Phlegraean Fields as a kid. Boiling mud pots, steamy creeks, colorful soil and a strong smell of hydrogen sulfide dominated the scene. It reminded me of the Meteor Falls in Pok&eacute;mon Emerald. We took a nice walk around the site and got back to the car around 18:00. Driving back to Reykjav&iacute;k, Leilani was contemplating the idea of going in a hot tub&mdash;I guess the Blue Lagoon hadn't fully left her mind. I didn't comment on it. Instead, I gave her H&oacute;f&iacute;'s document and said: &laquo;Would you want to go to one of the restaurants listed there?&raquo; and received a resounding &laquo;Yes!&raquo; We both agreed on Messinn, the seafood one. The plokkfiskur was really good, but way too much for our modest jet-lagged hunger, so we had to get two boxes. During the dinner Leilani asked me about my plans for the day after. &laquo;The Golden Circle.&raquo; &laquo;Can I come??&raquo; &laquo;Of course.&raquo;</p>
+        
+    <h2 id="day-2">Day 2 (August 3): Golden Circle and Reykjadalur</h2>
+    
+    <p>I went to pick up Leilani at her hostel. After a cup of coffee like the previous day, we left at 9:30. It was a wonderfully clear day, which allowed us to appreciate the beautiful Icelandic landscapes, full of geothermal steam plumes, immediately after leaving Reykjav&iacute;k. We wanted to do the Golden Circle: a well-known touristic route passing through some landmarks. First stop: &THORN;ingvellir, known to me as the exposed crest of the Mid-Atlantic Ridge, where the boundary between North America and Europe appears as a vertical rocky wall. The place was full of tourists, and we soon learned about the parking fee that is present at every touristic spot in the country.</p>
+    
+    <div class="figure-block">
+        <figure>
+          <img src="iceland-images/day-2/thingvellir.jpeg">
+          <figcaption>View of &THORN;ingvellir from above.</figcaption>
+        </figure>
+        <figure>
+        <img src="iceland-images/day-2/wall.jpeg">
+        <figcaption>The rocky wall delineating the Mid-Atlantic rift.</figcaption>
+      </figure>
+      <figure>
+        <img src="iceland-images/day-2/church.jpeg">
+        <figcaption>Prime Minister summer house and church at &THORN;ingvellir.</figcaption>
+      </figure>
+    </div>
+    
+    <p>We took a look from the top, walked down with the crowd through the rift, and explored the green plain beneath it. We then noticed a small church and four white houses next to it. After walking around them, Leilani asked a National Park ranger who was sitting there: &laquo;Does anybody live here?&raquo; The ranger was visibly happy that somebody talked to her, but also visibly frowning at our ignorance. She explained to us the political and historical significance of this site, and that visiting Prime Ministers of other countries still come here to meet the Icelandic one. Leilani was not supposed to be here today, but I had no excuses: I had studied the geology and completely ignored any cultural and historical aspect. Oops! The ranger ended the speech with &laquo;Normally when you go visit a place you do research on it first&raquo;, said with such a gentle tone that it did not even feel like a scold.</p>
+    
+    <p>The visit at &THORN;ingvellir took longer than I thought. That was mostly due, once again, to Leilani's openness: she was curious and fascinated about every little thing. This was a positive thing: I wouldn't have appreciated the place as much without her. But we had a plan to follow, and my high conscientiousness was screaming at the clock. This battle of personalities lasted the whole time, eventually giving rise to a memorable day that wouldn't have been possible with only one of the two ingredients.</p>
+    
+    <p>Following H&oacute;f&iacute;'s suggestion, we stopped by Efstidalur II, where we had lunch sitting in the grass (I ate the plokkfiskur leftovers), and then finished with the local ice cream. Some kids were jumping on a weird mix of a trampoline and an inflatable slide. I was observing the scene in silence. Leilani instead had already removed her shoes and started to try it out herself. She even convinced me to do the same. Poor kids, they got a little scared when they realized two adults were stealing their playground.</p>
+    
+    <div class="figure-block">
+        <figure>
+          <img src="iceland-images/day-2/trampoline.jpeg">
+          <figcaption>Leilani jumping with the kids on the trampoline.</figcaption>
+        </figure>
+        <figure>
+        <img src="iceland-images/day-2/bruarfoss.jpeg">
+        <figcaption>Br&uacute;arfoss.</figcaption>
+      </figure>
+      <figure>
+        <img src="iceland-images/day-2/strokkur.jpeg">
+        <figcaption>Strokkur erupting.</figcaption>
+      </figure>
+    </div>
+    
+    <p>The next stop was Br&uacute;arfoss, an improbably blue waterfall. Around this point Leilani and I made a bet on how many waterfalls we would have seen by the end of the day: I said 9 trying to argue that we didn't have a good definition of waterfall, she said 15 saying that when you see a waterfall you just know. Next we reached the two famous geysers, Geysir and Strokkur. Not even the time to walk up to it, and Strokkur surprised us with a big eruption. We remained there to see two more eruptions, then walked around and wondered how much more impressive Geysir must be when it goes off. Before getting back to the car, Leilani wanted to get some coffee. Given my limited 359-day experience with coffee, she encouraged me to try out some new type of it. I was a bit hesitant because I still had never had two coffees within the same day, and was worried it could affect my sleep. But I gave in, and tried a Swiss Mocha. Not bad, I must say.</p>
+    
+    <p>During the following driving section we remained astonished at the view of the Langj&ouml;kull glacier, some 30 km away. We reached Gullfoss, an impressively powerful yet crowded waterfall, where we mostly took some pictures and got wet from walking close to it. We then went to Faxafoss: another, smaller waterfall that we actually liked more because there was barely anyone around, and we could get so close as to touch the water. (By this point, the waterfall count was creeping up disturbingly.) A typical dinner stop on the Golden Circle is the Fri&eth;heimar tomato greenhouse, which was however closed due to some Icelandic holiday. So we opted for a donut with Salmon at Faxafoss. Finally, our last stop on the Golden Circle was Keri&eth;, a cute volcanic crater lake with reddish walls.</p>
+    
+    <div class="figure-block">
+        <figure>
+          <img src="iceland-images/day-2/gullfoss.jpeg">
+          <figcaption>Gullfoss.</figcaption>
+        </figure>
+        <figure>
+        <img src="iceland-images/day-2/leilani-gullfoss.jpeg">
+        <figcaption>Leilani at Gullfoss.</figcaption>
+      </figure>
+      <figure>
+        <img src="iceland-images/day-2/faxafoss.jpeg">
+        <figcaption>Faxafoss.</figcaption>
+      </figure>
+    </div>
+    
+    <p>I was worried about the time. For most tourists, Keri&eth; is the last stop on the Golden Circle before heading back to Reykjav&iacute;k. But I am always a bit more ambitious than the average tourist. And Leilani was clearly desiring to go in some sort of hot tub from the day before. So my plan for the day included Reykjadalur: a 2-hour round-trip hike with geothermal hot springs at the top. We cut Keri&eth; short, but were still about 2 hours late at the start of the Reykjadalur hike, compared to my plan. We packed swimsuit, headlamp, warm clothes, a towel like any good galactic hitchhiker, and started hiking around 18:45.</p>
+    
+    <div class="figure-block">
+        <figure>
+          <img src="iceland-images/day-2/kerid.jpeg">
+          <figcaption>Keri&eth;.</figcaption>
+        </figure>
+        <figure>
+        <img src="iceland-images/day-2/final-waterfall.jpeg">
+        <figcaption>The 13th waterfall.</figcaption>
+      </figure>
+      <figure>
+        <img src="iceland-images/day-2/reykjadalur.jpeg">
+        <figcaption>Hiking Reykjadalur.</figcaption>
+      </figure>
+    </div>
+    
+    <figure class="float-right">
+      <img src="iceland-images/day-2/hot-springs.jpeg">
+      <figcaption>Hot springs at Reykjadalur.</figcaption>
+    </figure>
+    
+    <p>Such a nice hike among smooth green hills! The waterfall count finally hit 13, giving Leilani the definitive win. I could tell though that she was getting tired from the long day, so I tried to keep her energy high by telling her my estimated Big 5 percentiles for her personality: O 95%, C 35%, E 90%, A 70%, N 20%. She also guessed mine accurately. Also, I was walking fast to make up time, but my rush was unjustified. Indeed, when we reached the hot springs around 19:50 there was still plenty of light, and the fact that we reached the place later in the day also meant it was not particularly crowded. We changed into our swimsuits and stepped in the water. Oh my! That water was exceedingly hot! I wasn't sure how the other people were fully immersed in it. But I quickly learned that while one side of the river was hot, the other was quite cool, so the key was to go somewhere in the middle.</p>
+    
+    <p>I had never bathed in hot springs before. In fact, I almost never take baths at all. And I generally do not include these relaxed-kind-of-activities in my holidays. But, somehow, I really enjoyed it. The river was shallow, so one had to lie down to be completely immersed. We remained in there almost 90 minutes. The sun set behind one of the surrounding high hills at some point, making for a very pretty scenery. We also chatted with some of the other people there. One of them was wondering why total solar eclipses are only visible in a small patch of the world. Leilani said &laquo;Well, you've got an astrophysicist right here&raquo; and left me the job of providing the detailed explanation.</p>
+    
+    <p>I was glad the hot bath happened much later in the day than anticipated, it was a wonderful conclusion. When we deemed it enough, Leilani and I left the river, got dressed again, hiked down, and drove back to Reykjav&iacute;k. We had met less than 48 hours before, but we were almost talking like good old friends. As it turns out, humans bind pretty quickly when they spend time together.</p>
+    
+    <p>But it was already time to say goodbye forever. Thank you, Leilani. <i>Lava-lads 4 life.</i></p>
+    
+    <h2 id="day-3">Day 3 (August 4): Landmannalaugar</h2>
+    
+    <p>I slept terribly. My Apple Watch recorded only 2h19m of sleep. I guess that Swiss Mocha was a little over my capabilities, after all. But that was not the time to try and make up sleep, as I had new places to explore. I stopped by Kr&oacute;nan to buy hike-friendly food, and left Reykjav&iacute;k and its steamy surroundings, heading South-East on the ring road. But I did not proceed to the coast straight away. Instead, I turned North-East towards Landmannalaugar, a famous area in the highlands with rhyolite mountains. On a much longer holiday I would have probably given the multi-day Laugavegur trek a shot, but I simply did not have the time to do it. I did however pick an F-road-rated car to reach it on a day trip. So I engaged 4x4 LOCK and continued my adventure on the F225. This was my second time ever driving on a 4x4 road, and it was definitely easier than ascending &#699;&Amacr;inap&omacr; road last year in Hawai&#699;i. It did however require me to ford a river, which my Dacia Duster did without any problem. The landscape around the road was breathtaking! I soon learned that I would have to miss out on many photos in Iceland, as some of the best landscapes unfolded while driving alone.</p>
+    
+    <div class="figure-block2">
+        <figure>
+          <img src="iceland-images/day-3/first-river.jpeg">
+          <figcaption>About to cross my first river on F225.</figcaption>
+        </figure>
+        <figure>
+          <img src="iceland-images/day-3/landmannalaugar-view.jpeg">
+          <figcaption>View of Landmannalaugar from Bl&aacute;hn&uacute;kur.</figcaption>
+        </figure>
+    </div>
+        
+    <div class="figure-block">
+        <figure>
+          <img src="iceland-images/day-3/landmannalaugar-colors.jpeg">
+          <figcaption>Different terrain colors at Landmannalaugar.</figcaption>
+        </figure>
+        <figure>
+        <img src="iceland-images/day-3/landmannalaugar-mountains.jpeg">
+        <figcaption>Rhyolite mountains seen descending Bl&aacute;hn&uacute;kur.</figcaption>
+      </figure>
+      <figure>
+        <img src="iceland-images/day-3/rainbow.jpeg">
+        <figcaption>360&deg; rainbow at Seljalandsfoss.</figcaption>
+      </figure>
+    </div>
+    
+    <figure class="float-right">
+      <img src="iceland-images/day-3/eclipse.jpeg">
+      <figcaption>Seljalandsfoss. Does this count as a solar eclipse?</figcaption>
+    </figure>
+    
+    <p>It was yet another perfect-weather day. I had lunch at the Landmannalaugar campsite and then started the Bl&aacute;hn&uacute;kur hike. The colors were simply unreal; I don't think I've ever seen a more colorful soil anywhere else. The blue sky and the occasional white snow fit perfectly in the landscape. I reached the peak of Bl&aacute;hn&uacute;kur, descended on the other side, walked the river valley and the 600-year-old lava field, and looped back to my car after 2h15m. It was an uncomplicated but very beautiful hike. But most importantly, I felt liberated. My injury had deprived me so much of outdoor activities during the summer that I felt so strongly the need for a real hike, up and down a mountain. Fagradalsfjall was a good test; Landmannalaugar was the first true hike.</p>
+    
+    <p>Next I retraced my steps along F225 and all the way back to the ring road. The drives were beautiful but long and it was already late afternoon. Even though I passed by Hella, next to which I had booked an accommodation, I proceeded East on the ring road so I could save some sightseeing time the following day. I visited the two waterfalls Seljalandsfoss and Glj&uacute;frab&uacute;i, which are right next to each other. Both were remarkable, but way too crowded to be enjoyed properly. One thing I particularly do not like is when tourists use landmarks with the sole purpose of taking pictures of themselves there, taking turns at the best spot. Glj&uacute;frab&uacute;i was the more beautiful waterfall, hidden in a narrow cave, but I could not even take a picture without other people appearing in the foreground in the frame.</p>
+    
+    <p>I had slept too little the night before to proceed further on the ring road, so I turned around and settled at Loa's Nest, which took the title as the best accommodation of my trip!</p>
+    
+    <h2 id="day-4">Day 4 (August 5): Glaciers</h2>
+    
+    <p>And yet, I only slept 4 hours. Again. I really struggle to deal with the jet lag. But I had another long day ahead, so after breakfast at Loa's Nest I restarted driving East. I decided to skip the stop at Sk&oacute;gafoss (I figured I wasn't going to be short on waterfalls), so my first destination was Reynisfjara, the famous black sand beach which in February 2026 suffered severe damage from the sea and weather. I was unable to find updated information on its status, so I went to check it out myself. It looked like much of the sand had actually returned! But I was still unable to properly enjoy Reynisfjara. Don't get me wrong, it is certainly a beautiful beach. But the crowd assaulting the basalt columns on the East side made it lose all of its magic. The two kilometers of black beach on the West, devoid of humans and terminating in two sea arches were a much better view.</p>
+    
+    <div class="figure-block">
+        <figure>
+          <img src="iceland-images/day-4/reynisfjara-east.jpeg">
+          <figcaption>Tourists and seagulls assaulting the basalt columns on the East side of Reynisfjara.</figcaption>
+        </figure>
+        <figure>
+        <img src="iceland-images/day-4/reynisfjara-west.jpeg">
+        <figcaption>West side of Reynisfjara. Kilometers of black beach with barely any tourists.</figcaption>
+      </figure>
+      <figure>
+        <img src="iceland-images/day-4/glaciers.jpeg">
+        <figcaption>Glacier tongues of Vatnaj&ouml;kull seen from the ring road.</figcaption>
+      </figure>
+    </div>
+    
+    <figure class="float-right">
+      <img src="iceland-images/day-4/fjadrargljufur.jpeg">
+      <figcaption>Fja&eth;r&aacute;rglj&uacute;fur.</figcaption>
+    </figure>
+    
+    <p>Impressive sights of glacier tongues had started to appear on the North side of the ring road. Next I was aiming for the Fja&eth;r&aacute;rglj&uacute;fur canyon, but I felt like my lack of sleep was finally starting to hit. So when I parked at Fja&eth;r&aacute;rglj&uacute;fur at 12:00, I hid on the backseats of my car and managed a tactical 30-minute nap. I then went to see the canyon, but it turned out to be another entry in the beautiful-yet-touristic-sightseeing series, with walking paths and viewing platforms turning the would-be hike into an accessible picture spot.</p>
+    
+    <p>Oh well. Back to the ring road, and to one of the most spectacular parts of it. The glacier tongues were now more numerous as I was approaching Vatnaj&ouml;kull, while the terrain turned from green hills into the magnificent black-and-turquoise braided rivers. Eventually I did reach one of these tongues up close, parking my car at Skaftafell. I was excited to finally have some actual action: a hike next to a glacier. So I prepared food and gear, and at 14:50 I started going for what I thought would have been a 3-hour hike.</p>
+    
+    <p>It took me 20 minutes to reach Svartifoss, a famous waterfall in a "cathedral" of basaltic columns. As soon as I moved past it, along the S3 trail, all the crowd completely disappeared. Finally back to what I like: just me, the wilderness and the sound of wind. It was as if my mind had taken a refreshing shower. My sleepiness completely disappeared, while my boots and trekking poles marched up Skaftafell, leaving behind me the distant glacial valleys. I saw maybe 5 or 6 people during the whole hike. I am normally a fast hiker, but I reached the midpoint in 2h45m, against the expected 3h for the round trip. I imagined that must have actually been the one-way estimate. But honestly? A longer-than-planned hike was exactly what I needed.</p>
+        
+    <div class="figure-block">
+        <figure>
+          <img src="iceland-images/day-4/svartifoss.jpeg">
+          <figcaption>Svartifoss.</figcaption>
+        </figure>
+        <figure>
+        <img src="iceland-images/day-4/skaftafellsjokull.jpeg">
+        <figcaption>Skaftafellsj&ouml;kull.</figcaption>
+      </figure>
+      <figure>
+        <img src="iceland-images/day-4/skaftafell-lake.jpeg">
+        <figcaption>Glacier lake at the foot of Skaftafellsj&ouml;kull.</figcaption>
+      </figure>
+    </div>
+    
+    <p>During the first part of the hike the views were nice but not exceptional. I was mostly focusing on enjoying the hunter-gatherer part of the experience. But at the midpoint everything changed: as I walked over the saddle to the East side of Skaftafell, suddenly, the glacier Skaftafellsj&ouml;kull appeared in full glory. A steep out-and-back trail went to the very top of Skaftafell, but since I was already late and the peak looked immersed in the clouds, I chose to skip it and start the descent on the East side, with views on Skaftafellsj&ouml;kull, its glacial lake and rivers extending 30 km to the ocean accompanying me the whole time. Perhaps the landscape wasn't as unreal as Landmannalaugar, but this was precisely the kind of hike I needed: up and down a mountain, with a reward at the top. I was so relieved my tibia was cooperating, and so happy to be back at physical activity outdoor. The full hike took 5h10m and it felt like it gave a meaning to my day.</p>
+    
+    <p>H&oacute;f&iacute; and her boyfriend Austin had also been touring the South of Iceland around those days. I had been in contact with her, and while I was descending Skaftafell we set up to meet at its base, as they were also passing by it around that time. It was so special to have somebody welcome me right at the end of the hike! And so pleasant to see a familiar face in such an unfamiliar place. When I complained about the large crowds of tourists, they explained that they were dealing with this by having an intentionally shifted schedule (e.g., starting the day at 12:00 and ending at 1:00), which works particularly well in Iceland during the summer due to the late sunsets. We then parted ways, agreeing to meet again at some point later.</p>
+    
+    <div class="figure-block">
+        <figure>
+          <img src="iceland-images/day-4/glacier-lagoon.jpeg">
+          <figcaption>J&ouml;kuls&aacute;rl&oacute;n (Glacier Lagoon).</figcaption>
+        </figure>
+        <figure>
+        <img src="iceland-images/day-4/diamond-beach.jpeg">
+        <figcaption>Diamond Beach.</figcaption>
+      </figure>
+      <figure>
+        <img src="iceland-images/day-4/diamond.jpeg">
+        <figcaption>Detail of an ice block at Diamond Beach.</figcaption>
+      </figure>
+    </div>
+    
+    <p>After the Skaftafell hike, I was happy with my day. Yes, I still had a long drive East to my accommodation, and another planned stop on the way, but I was mentally pretty done, with no particular expectations for the Glacier Lagoon J&ouml;kuls&aacute;rl&oacute;n. But when I arrived, I said out loud &laquo;Wait what?!&raquo;. A lagoon so extremely full of icebergs, of all sorts of colors and shapes, with big glaciers in the background and the sunset light giving warmth to an otherwise freezing sight. This was just an exceptionally beautiful place, a crazy scenery, and certainly a much better sightseeing than the waterfalls, the beach and the canyon.</p>
+    
+    <p>As I got off the car I immediately realized the temperature here was much colder than elsewhere. So I dressed up and went to admire the silent scene for some time. If it hadn't been such a long and tiring day, I would have certainly spent more time in the area. But as I was about to close the car's door and leave, I heard some strange noises. Then people running. And then I realized, one of the icebergs was turning itself upside down! So I also rushed to the shore and watched the improbable scene of the dark blue ice rotating in place of white ice, launching big waves across the lagoon. That was certainly a very unexpected surprise.</p>
+    
+    <p>But the long day wasn't quite finished yet, as I stopped by Diamond Beach, right across the mouth of the lagoon, where the ocean washes ashore chunks of ice. That was a sight I had never seen before, not even in pictures. Ice "diamonds" coming from the sea to populate a black beach. Much better than Reynisfjara, and much less crowded, perhaps because it was so late in the day. A day that had started with disappointing sightseeing eventually turned into a delightful ending, thanks to the beauty of this whole area of glaciers South of Vatnaj&ouml;kull. Fourteen hours after leaving Loa's Nest, I reached my new accommodation: a crappy guesthouse this time, but enough to fall asleep as soon as I had the chance to.</p>
+    
+    <h2 id="day-5">Day 5 (August 6): Eastern valleys</h2>
+    
+    <p>It took an intense day like that for me to finally sleep 8 hours. I left at 9:30 and joined H&oacute;f&iacute; and Austin while they were having breakfast, at an accommodation just 12 km East on the ring road. They invited me to join them in a nearby hot tub, but I declined as I had another long day of driving planned. They eventually returned all the way to Reykjav&iacute;k at the end of that day, while I headed in the opposite direction.</p>
+    
+    <div class="figure-block">
+        <figure>
+          <img src="iceland-images/day-5/stokksnes.jpeg">
+          <figcaption>Low clouds hid the mountain peaks at Stokksnes.</figcaption>
+        </figure>
+        <figure>
+        <img src="iceland-images/day-5/djupivogur.jpeg">
+        <figcaption>A road crossing in Dj&uacute;pivogur.</figcaption>
+      </figure>
+      <figure>
+        <img src="iceland-images/day-5/oxi.jpeg">
+        <figcaption>View of a waterfall from &Ouml;xi.</figcaption>
+      </figure>
+    </div>
+    
+    <p>First I considered a stop at Stokksnes, an area with mountain peaks over black sand beaches. But thick low clouds were hindering the views. So I quickly turned around and proceeded along the ring road, winding up cliffs and fjords to my right, and steep mountains to my left. By 12:30 I reached Dj&uacute;pivogur, a very cute town on the coast. Here I got a local smoked salmon roll for lunch: the best bit of Icelandic cuisine I got to experience during my trip. While waiting for my salmon to be ready, a family noticed the "Mauna Loa" pack of chocolate nuts in my bag, and started asking me questions about Hawai&#699;i and whether I had been on its volcanoes. I swear I don't go around shouting it out of nowhere!!</p>
+    
+    <p>Back at driving and now under some rain, I left the ring road and turned into &Ouml;xi, a steep gravel road serving as a shortcut to Egilssta&eth;ir. For the most part, &Ouml;xi ascends a valley of a similar kind as the ones I had seen so far, with rocky gorges and waterfalls all around. But after passing a saddle, the road briefly descends into a surprisingly new landscape, with the first sight of tall trees (Pinaceae) I had had since stepping foot in Iceland. This almost looked like Scandinavia. I stopped in Egilssta&eth;ir to buy food supplies, and proceeded North-West for some more time.</p>
+    
+    <div class="figure-block">
+        <figure>
+          <img src="iceland-images/day-5/studlagil.jpeg">
+          <figcaption>Stu&eth;lagil.</figcaption>
+        </figure>
+        <figure>
+        <img src="iceland-images/day-5/modrudalur.jpeg">
+        <figcaption>M&ouml;&eth;rudalur: the last reach of civilization before the highlands.</figcaption>
+      </figure>
+      <figure>
+        <img src="iceland-images/day-5/reindeer.jpeg">
+        <figcaption>The reindeer wandering around M&ouml;&eth;rudalur. </figcaption>
+      </figure>
+    </div>
+    
+    <p>Here I went to the Stu&eth;lagil canyon, an impressive gorge with the now familiar basaltic columns all around its walls, and incredibly blue water. I approached it from the West side, the "easier" one, featuring the usual setup of paid parking, walking paths, and viewing platforms. The East side has a 5 km walk and allows for a slightly better access to the water level, but I figured it wasn't worth my time when I still had a lot of driving ahead.</p>
+    
+    <p>Under a now heavy rainfall, I returned to the ring road and followed it through a black desert of the kind I so much love. My destination was M&ouml;&eth;rudalur: barely a village, mostly just a hostel and a church, serving as the launch pad for those who want to venture deep in the highlands, specifically to the Askja area. Of course I was one of those. After getting out of my car and collecting my bags, I raised my eyes and found 5 people taking pictures of me. I was about to say &laquo;What the...&raquo; when I realized a reindeer was sniffing my luggage behind my back. Apparently they keep him as a pet around M&ouml;&eth;rudalur.</p>
+    
+    <p>The following day I was planning to drive the F-roads to Askja and camp there. Unfortunately, the weather was forecast to become worse and worse, with freezing temperatures and possibly snow up there. I weighed the risks and decided to go anyway. I was disappointed, but I cared about Askja. And a tough experience is better than no experience.</p>
+    
+    <h2 id="day-6">Day 6 (August 7): Askja</h2>
+    
+    <p>After waking up, I went to ask the expert in M&ouml;&eth;rudalur for information about the F-roads. I was initially planning to go to Askja via F905 and F910, and leave it via F88 to reach M&yacute;vatn faster. But he told me the river crossing on F88 was too dangerous for my Dacia Duster, especially due to the ongoing rain, so I'd better retrace my steps when leaving.</p>
+    
+    <div class="figure-block">
+        <figure>
+          <img src="iceland-images/day-6/f-905.jpeg">
+          <figcaption>Driving in a black volcanic desert on F905.</figcaption>
+        </figure>
+        <figure>
+        <img src="iceland-images/day-6/f-905-river.jpeg">
+        <figcaption>About to cross a river on F905.</figcaption>
+      </figure>
+      <figure>
+        <img src="iceland-images/day-6/dacia.jpeg">
+        <figcaption>My Dacia Duster on F905.</figcaption>
+      </figure>
+    </div>
+    
+    <p>So I started my adventure in the highlands, driving 2h40m towards Askja. The landscape was extraterrestrial. No doubt why Apollo astronauts came here to train. I put Test Shot Starfish's "Music for Space" on the car's speakers and observed the environment as I moved through it. Initially a black desert, as far as the eyes could see. Then glacial rivers, some small enough to be forded, others too violent and requiring a bridge. Rocky terrain then replaced the volcanic dust, and finally a layer of yellow-golden tephra started to appear, covering the black soil more and more as I approached Askja. I finally arrived at Dreki, a campsite with a few huts and visitors and National Park rangers. Honestly, its facilities were much better than I anticipated, as they included toilets, a campsite reception selling snacks, and even the possibility of paying for a night in the hut. The weather was quite terrible, with cold drizzling rain and strong winds, and a park ranger informed me that up at Askja it was even worse.</p>
+    
+    <p>But that was going to be my only day at Askja, so I tried to make the best out of it. After a brief hike into the Drekagil gorge, I got back in the car, drove 10 km uphill and reached the Vikraborgir Car Park, where I started hiking towards the Askja caldera. Unfortunately, the weather was unbearable, my supposedly waterproof equipment started to fail, and the fog was so thick that I could not appreciate anything in the landscape. A few other visitors were just leaving the area while I walked 2.5 km towards the geothermal lake V&iacute;ti. The first part of the hike was on familiar black lava, but the terrain unexpectedly turned into a muddy light brown soil as I got closer to V&iacute;ti. I am unsure whether this is the result of geothermal activity chemically breaking down the rocks. Anyway, even on flat ground, the mud was extremely slippery, and my boots were constantly getting sucked off. When I reached V&iacute;ti, weather conditions were so bad that I decided to not attempt the steep descent to its surface: it felt rather dangerous to do it alone, with such a high chance of slipping, and in low visibility. I figured I had to be satisfied with the foggy views of its turquoise water. I walked around the rim of V&iacute;ti, but the big &Ouml;skjuvatn lake was almost completely hidden by the fog.</p>
+    
+    <div class="figure-block">
+        <figure>
+          <img src="iceland-images/day-6/dreki.jpeg">
+          <figcaption>Dreki huts.</figcaption>
+        </figure>
+        <figure>
+        <img src="iceland-images/day-6/drekagil.jpeg">
+        <figcaption>Drekagil gorge, looking out.</figcaption>
+      </figure>
+      <figure>
+        <img src="iceland-images/day-6/viti.jpeg">
+        <figcaption>V&iacute;ti in foreground and &Ouml;skjuvatn in the background. Or at least, supposedly so.</figcaption>
+      </figure>
+    </div>
+    
+    <p>This was a bit of a disappointment, as I think Askja could have been my favorite place in Iceland if I had actually got the chance to see it and explore it. Sometimes it just isn't your day. Now completely wet, and very cold, I went back to Dreki, where I spent the late afternoon in the campsite reception, trying to warm myself up. There were a couple of families there, even with small kids&mdash;I guess it's a remote area but (weather permitting) friendly enough for an adventurous family.</p>
+    
+    <p>After eating my dinner, I went out again in the wind and rain at 2 &deg;C. I unfolded the "bed" in my car, moved all the luggage and gear to the front seats, and got into my sleeping bag. Even with heavy clothes on, it took me a long time to get to a comfortable temperature, but eventually I fell asleep under the sound of rain hitting the car.</p>
+    
+    <h2 id="day-7">Day 7 (August 8): Geothermal power</h2>
+    
+    <p>When I woke up, there were snow crystals all around my car's windows. I was well-insulated while sleeping (except for my very cold nose), but getting out of the sleeping bag, out of the car, and rearranging the interior of my Dacia under that weather was tough. The way out of Askja was smooth, as I was becoming more familiar with getting through F-roads. I looked confident enough that some people stopped at a river fording, watched me do it, and then asked me for advice on how to do it safely.</p>
+    
+    <div class="figure-block">
+        <figure>
+          <img src="iceland-images/day-7/road-hverir.jpeg">
+          <figcaption>The ring road winding up the hills at Hverir.</figcaption>
+        </figure>
+        <figure>
+        <img src="iceland-images/day-7/hverir.jpeg">
+        <figcaption>Hverir.</figcaption>
+      </figure>
+      <figure>
+        <img src="iceland-images/day-7/power-plant.jpeg">
+        <figcaption>The geothermal power plant at Leirhnj&uacute;kur.</figcaption>
+      </figure>
+    </div>
+    
+    <p>Proceeding West on the ring road, I arrived at Hverir, an active geothermal area, similar to Kr&yacute;suv&iacute;k from day 1 but much bigger. I walked around the area (covered in brown mud similar to V&iacute;ti at Askja), peeking in the boiling mud pots. The steam plumes were supposed to be enormous, but the strong wind was funneling them close to the ground, so much that positioning myself leeward from a vent was giving significant relief from the cold.</p>
+    
+    <p>Once again completely wet from the rain, I moved to the other side of the ring road, towards the Krafla area. Passing by the Krafla Geothermal Power Plant was quite the sight, with steam and enormous tubes warping around the road. I briefly stopped by the green Krafla V&iacute;ti, but did not try to walk around its rim in that weather. Instead, I did venture to the nearby Leirhnj&uacute;kur and its 1984 lava flow. So Hawaiian, with the trail crossing a p&amacr;hoehoe field and then going on &#699;a&#699;&amacr;! But the similarities ended as soon as the rhyolite hills and the geothermal plumes and ponds appeared from the fog.</p>
+    
+    <div class="figure-block">
+        <figure>
+          <img src="iceland-images/day-7/krafla.jpeg">
+          <figcaption>Krafla V&iacute;ti.</figcaption>
+        </figure>
+        <figure>
+        <img src="iceland-images/day-7/leirhnjukur.jpeg">
+        <figcaption>A geothermal pond, a rhyolite hill and a lava flow at Leirhnj&uacute;kur.</figcaption>
+      </figure>
+      <figure>
+        <img src="iceland-images/day-7/pahoehoe-aa.jpeg">
+        <figcaption>P&amacr;hoehoe and &#699;a&#699;&amacr; at Leirhnj&uacute;kur.</figcaption>
+      </figure>
+    </div>
+    
+    <p>The whole area (Hverir, Krafla, Leirhnj&uacute;kur) was very fascinating and much more volcanically active than the rest of Iceland, except for Reykjanes. It was a throwback to day 1, but without Leilani around and in a much worse weather. I spent quite some time looking at the lava fields at Leirhnj&uacute;kur, but at some point I figured I really needed a warm shower and dry clothes. So I drove to my guesthouse past M&yacute;vatn, fulfilled that desire, had a warm dinner (the first since day 1) and fell asleep.</p>
+    
+    <h2 id="day-8">Day 8 (August 9): Diamond Circle</h2>
+    
+    <p>Unfortunately, when I woke up I found out that my shoes, jacket, hat, and gloves hadn't dried out. Alas. I only had to endure one more day of bad weather. After driving around the South side of the M&yacute;vatn basin, I reached the attraction in the Hverir area I had skipped the day before: Hverfjall. A black tephra cone, 1 km in diameter, resulting from a phreatomagmatic eruption 2500 years ago. I waited out a rain shower in the car and then ventured on the short hike. That was pretty cool! The 1-hour loop on the rim of the cone delivers very nice views on the whole M&yacute;vatn area and the white plumes of Hverir. Next I visited the nearby thermal pond Grj&oacute;tagj&aacute;. What a nice surprise! Visitors can descend a few meters into a lava fissure, encountering this small place with magical atmosphere. The cave is quiet and mostly dark, with some light rays penetrating from the openings of the lava fissure. The water of Grj&oacute;tagj&aacute; is intensely blue yet transparent, with steam emanating from it. I touched the water and found it to be quite hot indeed. I spent 15 pleasant minutes inside, only bothered by a few noisy people that didn't seem to understand the vibe of the place.</p>
+    
+    <div class="figure-block">
+        <figure>
+          <img src="iceland-images/day-8/hverfjall-1.jpeg">
+          <figcaption>View from the rim of Hverfjall. In the background: the M&yacute;vatn basin on the left and the Hverir steam plumes on the right.</figcaption>
+        </figure>
+        <figure>
+        <img src="iceland-images/day-8/hverfjall-2.jpeg">
+        <figcaption>Interior of Hverfjall.</figcaption>
+      </figure>
+      <figure>
+        <img src="iceland-images/day-8/grjotagja.jpeg">
+        <figcaption>Grj&oacute;tagj&aacute;.</figcaption>
+      </figure>
+    </div>
+    
+    <p>Back on the road, I drove towards Dettifoss, one of the most powerful waterfalls in Europe. The waterfall itself, while certainly impressive, had the same touristic-sightseeing kind of setup I described for several places in South Iceland. And to be honest, the most memorable thing of my visit there was the otherworldly landscape the waterfall sits in, full of basaltic canyons of all shapes and sizes. Too bad everybody just seemed to care about taking a picture of themselves with the falling water in the background.</p>
+            
+    <div class="figure-block">
+        <figure>
+          <img src="iceland-images/day-8/dettifoss.jpeg">
+          <figcaption>Dettifoss (see the people on the left for scale).</figcaption>
+        </figure>
+        <figure>
+        <img src="iceland-images/day-8/hljodaklettar-1.jpeg">
+        <figcaption>Basalt honeycomb on a vertical wall at Hlj&oacute;&eth;aklettar.</figcaption>
+      </figure>
+      <figure>
+        <img src="iceland-images/day-8/hljodaklettar-2.jpeg">
+        <figcaption>Hlj&oacute;&eth;aklettar. Person on the right for scale.</figcaption>
+      </figure>
+    </div>
+    
+    <p>Driving 20 minutes down the J&ouml;kuls&aacute; &aacute; Fj&ouml;llum river, I reached Hlj&oacute;&eth;aklettar. I was not too sure what to expect from this place, but I was, once again, positively surprised by the geology of North-East Iceland. There was an unreal number of improbable basaltic formations all around the river. Most remarkably, several honeycomb arrays of basalt columns created vertical walls as well as caves. One cave in particular was particularly large and impressive&mdash;I sat for some time in the back of it, shielding myself from the weather and listening to the drops of water falling from the rocky roof. The whole area was also rather devoid of tourists. Hlj&oacute;&eth;aklettar is very underrated!</p>
+    
+    <div class="figure-block">
+        <figure>
+          <img src="iceland-images/day-8/asbyrgi.jpeg">
+          <figcaption>Botnstj&ouml;rn at &Aacute;sbyrgi.</figcaption>
+        </figure>
+        <figure>
+        <img src="iceland-images/day-8/apollo-2.jpeg">
+        <figcaption>Reproduction of the Apollo astronauts' spacesuit.</figcaption>
+      </figure>
+      <figure>
+        <img src="iceland-images/day-8/armstrong.jpeg">
+        <figcaption>Neil Armstrong's hammer.</figcaption>
+      </figure>
+    </div>
+    
+    <figure class="float-right">
+      <img src="iceland-images/day-8/apollo-1.jpeg">
+      <figcaption>Monument in H&uacute;sav&iacute;k, dedicated to the Apollo astronauts training in Iceland.</figcaption>
+    </figure>
+    
+    <p>Farther downstream, I visited &Aacute;sbyrgi, a large horseshoe canyon with much richer vegetation than pretty much any other place I had seen by that point. Once again, quite an impressive place. I drove in between the vertical walls of the canyon, reaching the parking lot at the very heart of it. From there, I walked to the very edge of the horseshoe, to a place known as Botnstj&ouml;rn: a lovely, quiet and green pond, surrounded by curved rock walls giving cozy vibes.</p>
+    
+    <p>To conclude the Diamond Circle, I drove along the North coast, enjoying great views on the Greenland Sea (finally with a glimpse of improving weather), arriving at H&uacute;sav&iacute;k about one hour later. I was not particularly interested in the town itself. Instead, I headed straight to a very specific destination: the Exploration Museum, which I knew for containing items related to the training of Apollo astronauts in Iceland. I was initially confused about where the "museum" was. Eventually I found out I first had to go in a quite weird bar, which sold the tickets, and let me proceed to the exhibition. The museum was very small and, to my surprise, half of it was about... Eurovision. Not really sure why. Anyway, the part about space exploration was nice but nothing exceptional. Still enough to give me the usual chills and misty eyes that I get with anything related to space exploration. The most notable original item was the hammer used by Neil Armstrong during training.</p>
+    
+    <p>Almost fully closing the circle, I went back on the ring road and reached my new accommodation. North-East Iceland, including Askja, the M&yacute;vatn area and the Diamond Circle, had really impressed me. It's both a pity and a blessing that it isn't as well-known as the attractions in the South. My only regret was that my visit in the area coincided with the worst weather I encountered during the trip.</p>
+    
+    <h2 id="day-9">Day 9 (August 10): Akureyri and Vatnsnes</h2>
+    
+    <p>I took that morning easy. I was not planning on any big exploration, as I had just finished seeing the most attractive areas&mdash;this was meant to be a day of transition into the eclipse window, for which I would have needed to move back to the West side of the country. Good weather was finally back, which meant I could wear light clothes and normal shoes, leaving all the wet stuff dry.</p>
+    
+    <p>After leaving the hotel I drove West to the nearby Akureyri, where I enjoyed a delightful city walk for most of the morning. I explored the Botanical Garden (which unfortunately did not have any big trees, given the latitude...), the ups and downs of the city, and had lunch at a restaurant by the harbor, where two cruise ships were stationed.</p>
+    
+    <div class="figure-block">
+        <figure>
+          <img src="iceland-images/day-9/akureyri.jpeg">
+          <figcaption>Downtown Akureyri.</figcaption>
+        </figure>
+        <figure>
+        <img src="iceland-images/day-9/hvitserkur.jpeg">
+        <figcaption>Hv&iacute;tserkur.</figcaption>
+      </figure>
+      <figure>
+        <img src="iceland-images/day-9/seal.jpeg">
+        <figcaption>A seal at Illugasta&eth;ir.</figcaption>
+      </figure>
+    </div>
+    
+    <p>Being in a relatively large town was also convenient because I had to buy stocks of essentials (like food and water) for my days of camping around the eclipse. So I filled two bags with caloric food and drove West 2h30m to the Vatnsnes peninsula.</p>
+    
+    <p>Here I stopped twice. First at Hv&iacute;tserkur, a remarkable sea stack with two arches and hundreds of seagulls. I descended down to the quiet beach beneath the viewpoint and enjoyed a really nice walk on the black beach, by a surprisingly calm sea. Back to the car, I drove all around the coast of the peninsula to Illugasta&eth;ir, a bay with a well-known seal colony. There were two seals, one of which was behaving really weirdly, producing loud noises with its nose underwater, and repeatedly slapping the sea surface with its paw. It almost looked like it was performing for the tourists!</p>
+    
+    <figure class="figure-block">
+      <img src="iceland-images/day-9/hvitserkur-panorama.jpeg">
+      <figcaption>View on Hv&iacute;tserkur and the black beach in front of it.</figcaption>
+    </figure>
+    
+    <p>Finally being late afternoon, I drove to the final accommodation before the upcoming nights of camping for the eclipse: Brekkul&aelig;kur Guesthouse, which took the silver medal of the accommodations. This was actually the moment of a crucial decision. I had picked Brekkul&aelig;kur due to its convenient location as a launchpad towards different possible destinations in the path of totality in the West: the Westfjords, Sn&aelig;fellsnes, or the Reykjav&iacute;k/Reykjanes area in a pinch. Which of these I would be driving to depended on the weather forecast. Of course I had been monitoring the situation the previous days&mdash;now I studied it exhaustively. The forecast was not encouraging, but the decision was easy. Iceland was going to be completely overcast on Wednesday; however, high clouds have little effect on viewing the sun, while middle and low clouds prevent it. Out of all locations, only the Westfjords had a chance of breaks in the middle and low clouds. Going to the Westfjords also meant I would have had the chance to see Sn&aelig;fellsnes on the way back to Reykjav&iacute;k, while the opposite was not feasible. I decided to postpone to the following day (and thus to a more accurate forecast) the decision about the specific location in the Westfjords.</p>
+    
+    <p>Having settled the eclipse decision, I considered doing something I always do in remote places: stargazing. This had been in my mind the whole trip (especially due to the coincidence of the Perseids peak with the eclipse), together with the chance of seeing the aurora, whose forecast I had been peeking at every now and then. For various reasons (weather, or being in areas with light pollution), I was not able to look at the night sky the previous days. But now that I had the chance, I realized I had severely underestimated how late the Icelandic sunset is even mid-August, and especially how bright the sky remains for hours after that. Even deep in the night, the sky was not going to reach astronomical night. Disappointed, but hopeful for the upcoming eclipse, I enjoyed my last night in a bed before the adventure in the Westfjords.</p>
+    
+    <h2 id="day-10">Day 10 (August 11): Westfjords</h2>
+    
+    <p>After a nice breakfast at Brekkul&aelig;kur, I checked again the weather forecast. The area of the Westfjords with the highest chance of breaks in middle and low clouds had shifted: it was no longer the extreme West tip, but the North-West, slightly West of &Iacute;safj&ouml;r&eth;ur. That's where I aimed, to a campsite in a small village called Flateyri. The drive across the Westfjords was long but very, very beautiful. The area was quite different, and geologically much older, than any other landscape seen by that point. The road wound up and down the mountains, all along the coast of the fjords, offering complete views of the landscape of countless U-shaped glacial valleys with barely any trees. Towards the end of the drive I took a wrong turn into a long 1-lane tunnel, but was rewarded with a magnificent view of &Iacute;safj&ouml;r&eth;ur, only spoiled by its three cruise ships.</p>
+    
+    <div class="figure-block">
+        <figure>
+          <img src="iceland-images/day-10/westfjord.jpeg">
+          <figcaption>Overlooking one of the Westfjords.</figcaption>
+        </figure>
+        <figure>
+        <img src="iceland-images/day-10/isafjordur.jpeg">
+        <figcaption>Overlooking &Iacute;safj&ouml;r&eth;ur.</figcaption>
+      </figure>
+      <figure>
+        <img src="iceland-images/day-10/flateyri.jpeg">
+        <figcaption>Overlooking Flateyri.</figcaption>
+      </figure>
+    </div>
+    
+    <p>I was worried about traffic, overfull campsites, shortage of fuel and food. None of that happened. In fact, when I arrived at the campsite in Flateyri, mid afternoon, there were only four campers, populated by hippies. There was a gas pump right next to it, which included a shop of all sorts of food. Oh well, I had overprepared.</p>
+    
+    <p>Then I got to know Flateyri, that tiny fishermen's village that I will never forget, having elected it to be my base camp for my second total solar eclipse. Flateyri was very cute. Two streets, one church, and gigantic avalanche barriers that protect them from the dangers of the mountains around. I also looked around to get familiar with the geography. The sun at 17:43 (the time of the eclipse the following day) was not low enough to be blocked by the mountains. But I thought it would have still been a good idea to be on a higher ground. Near the campsite I found a map with the nearby hiking trails, one of which climbing the Seljanef peak, right above Flateyri's fjord &Ouml;nundarfj&ouml;r&eth;ur. It immediately looked like I had gotten my answer.</p>
+    
+    <p>Later in the evening, more cars and campers arrived at the campsite, but still nowhere enough to make it overfull. The eclipse tension was building up. The chance of cloud breaks seemed high at 17:00 and low at 18:00. At some point I decided it was pointless to keep checking the forecast, because I had made my decision and was happy with it. So I set up the car in the sleep-in-back configuration, rolled out my Hawaiian sleeping bag and dreamed of a black sun.</p>
+        
+    <h2 id="day-11">Day 11 (August 12): Purple darkness</h2>
+    
+    <p>It really is undeserved. Not that total solar eclipses happen at all (contrary to what is usually stated)&mdash;that's pretty common on other planets. But that, on any given part of the Earth, they happen <i>so rarely</i>. That the umbra is so small, that almost only the photosphere gets covered. Because we already know what night is like. What we don't know, and is so shocking to experience, is daytime with a perfect cosmic coronagraph. The rarity and briefness of total solar eclipses on Earth are precisely the reasons they look like nothing else we can ever experience.</p>
+    
+    <p>I would have a lot to say about solar eclipses. But my experience in Iceland was not blessed with clear skies, so I prefer to leave a retelling of the mix of science and awe caused by the optical phenomena around totality for a future diary. Instead, my Icelandic eclipse was memorable in a less standard way.</p>
+    
+    <p>During the morning of August 12 I did nothing but carefully study the cloud pattern forecasts and evaluate my options. The only competitor to the Seljanef hike was driving to some other area of North-Western Westfjords, but it didn't look like I could have any serious chance of outrunning the clouds or find a location with a considerably better forecast. So I made my decision: with a likely cloudy sky, a scenic location would have been the better choice. Around lunch time I walked out of Flateyri and onto the Seljanef trail, hiking really really slowly, taking my time to enjoy all the views on &Ouml;nundarfj&ouml;r&eth;ur. Only two solo hikers seemed to have had the same idea as me.</p>
+    
+    <div class="figure-block">
+        <figure>
+          <img src="iceland-images/day-11/glasses.jpeg">
+          <figcaption>My eclipse glasses, carried over from the 2024 eclipse in North America.</figcaption>
+        </figure>
+        <figure>
+        <img src="iceland-images/day-11/location.jpeg">
+        <figcaption>The peak of Seljanef, my eclipse viewpoint.</figcaption>
+      </figure>
+      <figure>
+        <img src="iceland-images/day-11/partial.jpeg">
+        <figcaption>The partially eclipsed sun over &Ouml;nundarfj&ouml;r&eth;ur.</figcaption>
+      </figure>
+    </div>
+    
+    <p>The peak of Seljanef was a perfect viewpoint: great views on the fjord, high enough to have the horizon clear in all directions, and I was all alone (a handful of people eventually did reach the peak too, but they picked their location far enough from mine). I sat against a rock cairn to shield myself from the wind, prepared the sandwiches for later, took out my eclipse glasses and waited.</p>
+    
+    <figure class="figure-block">
+      <img src="iceland-images/day-11/panorama.jpeg">
+      <figcaption>Panoramic view from the peak of Seljanef. Flateyri is visible on the left.</figcaption>
+    </figure>
+    
+    <p>During the hike up, the clouds opened up enough for the sun to produce sharp shadows, giving me concrete hopes of seeing the eclipsed sun. Indeed, I saw the first contact clearly, and the clouds continued to be patchy for 35 minutes after that. At that time, it felt like a coin flip. But then a thick layer of middle clouds arrived from South-East, making it impossible to see the sun. Alas. I had signed up for this when picking Iceland over Spain. The second half of the partial eclipse wasn't as enjoyable as the first one, because there wasn't anything to see, while the temperature kept dropping to an uncomfortable level and the wind intensified.</p>
+    
+    <p>But then I saw it coming. The horizon North-North-West started to turn into intense sunset colors, and the light dimmed faster and faster. Adrenaline kicked in. Now standing up on the very edge of the cliff, arms wide open, I stopped feeling the cold and the wind. I could not see the sky, but the &laquo;What the hell is happening?!&raquo; feeling from 2024 was back in full force.</p>
+    
+    <div class="figure-block2">
+        <figure>
+          <img src="iceland-images/day-11/almost-total.jpeg">
+          <figcaption>Seconds before totality.</figcaption>
+        </figure>
+        <figure>
+        <img src="iceland-images/day-11/total.jpeg">
+        <figcaption>Seconds into totality.</figcaption>
+      </figure>
+    </div>
+    
+    <p>The incoming umbra announced itself as a purple shade on the distant clouds. Light changed too quickly to truly process what was happening, and the purple came over me. That was a rather different experience from 2024. Looking at the sun was not an option, so I was forced to focus on the environment around me&mdash;and what a sight it was! Now orange in all directions, the horizon was the only source of light. The sea in &Ouml;nundarfj&ouml;r&eth;ur was also purple, while Flateyri shone below via a small number of white lights.</p>
+    
+    <p>No views of the corona, no silvery light, no anisotropically sharp shadows, no shadow bands, no Baily's beads. But three minutes (of which 1m40s of actual totality) of absolute madness, above a sea of purple, probably in one of the best spots I could have picked in Iceland to observe this eclipse.</p>
+    
+    <p>When my post-totality hysterical laughter was over and all the brain functions came back, all I could think was thanking myself for having hiked up that mountain. That made the experience unforgettable. The orange lights were still visible for some time, now South and moving away from the Westfjords. As the pain and temperature receptors were back online, I took my bag and trekking poles and quickly descended down to Flateyri, in just about 1h15m.</p>
+    
+    <p>The cloud cover became increasingly thicker, and by the time I was back at the campsite it was raining. I guess I can regret having missed views of the corona by only 25 minutes, but I also escaped being under the weather on the mountain's peak by only about 1 hour. A memorable day for better or worse, and the only one in Iceland without driving even a single kilometer.</p>
+    
+    <h2 id="day-12">Day 12 (August 13): The long road back</h2>
+    
+    <p>My last night in the car was also the best night of sleep in Iceland, with over 8 hours of much needed rest. Around 10:00 I was one of the first to leave the Flateyri campsite. The road to Reykjav&iacute;k was long, but I decided to make it even longer by detouring into Sn&aelig;fellsnes because I would have certainly regretted not taking a look at it. My first impression of Sn&aelig;fellsnes was quite similar to the Westfjords, but eventually some fresher lava flows appeared and I felt at home. Unfortunately a low cloud deck was blocking any attempts at panoramic views of the peninsula or the Sn&aelig;fellsj&ouml;kull volcano. After five almost continuous hours of driving, I reached the town of Grundarfj&ouml;r&eth;ur and refreshed myself at a local bar with nice views on Kirkjufell.</p>
+    
+    <div class="figure-block">
+        <figure>
+          <img src="iceland-images/day-12/kirkjufell.jpeg">
+          <figcaption>Kirkjufell seen from Grundarfj&ouml;r&eth;ur.</figcaption>
+        </figure>
+        <figure>
+        <img src="iceland-images/day-12/budakirkja.jpeg">
+        <figcaption>B&uacute;&eth;akirkja.</figcaption>
+      </figure>
+      <figure>
+        <img src="iceland-images/day-12/borgarnes.jpeg">
+        <figcaption>A playground in Borgarnes.</figcaption>
+      </figure>
+    </div>
+    
+    <p>On the other side of Sn&aelig;fellsnes, I visited the picturesque black church B&uacute;&eth;akirkja, facing the ocean and supposedly in the middle of nowhere. While its context was indeed fascinating, the nearby hotel and two parking lots certainly erased some of the magic.</p>
+    
+    <p>My last stop on the way back was the town of Borgarnes, where I stopped to eat my dinner and take a walk by the shore. Honestly, I was expecting more vibrant vibes, but I was not in Iceland to visit its towns anyway. Driving the last stretch of the ring road, I finally came back to Reykjav&iacute;k. One of the very few accommodations available for that night was a hostel, full of Italian groups about to start or finish their tour of the country. I had to share the room with 5 of them. Initially I contemplated pretending I wasn't their compatriot, but Italians talk so much to anybody that eventually they found out and included me in their conversations.</p>
+        
+    <h2 id="day-13">Day 13 (August 14): One last walk</h2>
+    
+    <p>As a final goodbye to Iceland, I went to Reykjav&iacute;k center with, for the first time, the intention of actually exploring it. Luckily, I had the best possible companion: a local! I met up with H&oacute;f&iacute; at Harpa, we got coffee nearby and I followed her around windy downtown Reykjav&iacute;k. We shared stories about our respective road trips and eclipse experiences. Two hours later, I said goodbye to H&oacute;f&iacute;, got a warm lunch, returned the Dacia Duster (3286 km driven) and hopped on the bus to the airport.</p>
+    
+    <div class="figure-block">
+        <figure>
+          <img src="iceland-images/day-13/harpa.jpeg">
+          <figcaption>The Harpa concert hall.</figcaption>
+        </figure>
+        <figure>
+        <img src="iceland-images/day-13/hallgrimskirkja.jpeg">
+        <figcaption>Hallgr&iacute;mskirkja.</figcaption>
+      </figure>
+      <figure>
+        <img src="iceland-images/day-13/high-school.jpeg">
+        <figcaption>H&oacute;f&iacute;'s high school.</figcaption>
+      </figure>
+    </div>
+        
+    <p>No Hawaiian bus driver this time. Just views of endless moss-covered &#699;a&#699;&amacr; flows. Back home, I guess. Lava-lad 4 life.</p>
+        
+</div>
+
+</body>
