@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | escape }} · Subotto</title>
+</head>
+<body>
+  <p><a href="../">Archivio del Subotto</a></p>
+  <h1>{{ page.title | escape }}</h1>
+  {% assign files = site.static_files | sort: "name" %}
+  {% assign count = 0 %}
+  <ul>
+    {% for file in files %}
+      {% assign local_path = page.dir | append: file.name %}
+      {% if file.path == local_path %}
+        <li><a href="./{{ file.name | url_encode | replace: '+', '%20' | escape }}">{{ file.name | escape }}</a></li>
+        {% assign count = count | plus: 1 %}
+      {% endif %}
+    {% endfor %}
+  </ul>
+  {% if count == 0 %}<p>Le foto non sono ancora disponibili.</p>{% endif %}
+</body>
+</html>
